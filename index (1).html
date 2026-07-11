@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Namma Nivasa | Premium Home Construction Company in Bengaluru</title>
+<meta name="description" content="Namma Nivasa builds premium homes across Bengaluru — Whitefield, Sarjapur Road, HSR Layout, Electronic City & more — with 100% transparent pricing, a 10-year structural warranty and RERA-compliant construction, starting at ₹1,799/sq.ft.">
+<meta name="keywords" content="house construction Bangalore, home builders Bengaluru, villa construction Whitefield, construction cost Bangalore, BBMP approval, RERA construction company">
+<link rel="canonical" href="https://www.nammanivasa.in/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Namma Nivasa">
+<meta property="og:title" content="Namma Nivasa | Premium Home Construction Company in Bengaluru">
+<meta property="og:description" content="Build your dream home in Bengaluru with complete transparency. Premium construction packages starting at ₹1,799/sq.ft. 10-year structural warranty, RERA compliant.">
+<meta property="og:image" content="https://www.nammanivasa.in/images/og-cover.jpg">
+<meta property="og:url" content="https://www.nammanivasa.in/">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Namma Nivasa | Premium Home Construction in Bengaluru">
+<meta name="twitter:description" content="Transparent, RERA-compliant home construction across Bengaluru — from foundation to handover.">
+<meta name="twitter:image" content="https://www.nammanivasa.in/images/og-cover.jpg">
+
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   NAMMA NIVASA — Construction Co. Design System
+   Signature concept: "The Blueprint Made Visible" — every section is framed
+   like an architectural drawing: dimension lines, coordinate labels for
+   localities (this is a geography-led brief), hairline grids, and a hero
+   house-outline that draws itself in, echoing the brand's transparency promise.
+   ========================================================================== */
+
+:root {
+  /* ---- Color tokens ---- */
+  --ink: #171B1F;
+  --ink-soft: #454C54;
+  --paper: #FAF7F1;
+  --paper-dim: #F1ECE2;
+  --line: #DCD4C4;
+
+  --blue: #12315C;      /* Deep Royal Blue — primary, structure & trust */
+  --blue-dim: #1D3F73;
+  --gold: #B8862E;      /* Premium Gold — craftsmanship, warmth */
+  --gold-soft: #E7D7AF;
+  --emerald: #1F6F54;   /* Emerald — approvals / success / green cover */
+  --orange: #E0590E;    /* CTA — action, safety-vest energy of a live site */
+
+  --white: #FFFFFF;
+
+  /* ---- Type ---- */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ---- Scale & rhythm ---- */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 28px;
+  --shadow-soft: 0 12px 32px -18px rgba(23, 27, 31, 0.25);
+  --shadow-lift: 0 24px 64px -24px rgba(23, 27, 31, 0.35);
+  --container: 1240px;
+  --gutter: clamp(20px, 5vw, 64px);
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: inherit; font-size: inherit; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; margin: 0; color: var(--blue); letter-spacing: -0.01em; }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--gold); display: inline-block; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+.section { padding: clamp(64px, 9vw, 128px) 0; position: relative; }
+.section-head { max-width: 720px; margin-bottom: 48px; }
+.section-head h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin-top: 14px; }
+.section-head p { color: var(--ink-soft); font-size: 1.05rem; margin-top: 16px; }
+
+/* Coordinate-style divider used between major sections — grounds the
+   "locality-led" structure of the brief instead of generic 01/02/03 markers */
+.coord-rule {
+  display: flex; align-items: center; gap: 14px;
+  font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-soft);
+  letter-spacing: 0.08em; padding: 0 var(--gutter); max-width: var(--container); margin: 0 auto;
+}
+.coord-rule::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 15px 28px; border-radius: 999px; font-weight: 600; font-size: 0.95rem;
+  border: 1px solid transparent; transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--orange); color: var(--white); box-shadow: 0 14px 30px -12px rgba(224,89,14,0.55); }
+.btn-primary:hover { background: #c94d0c; }
+.btn-outline { background: transparent; border-color: rgba(255,255,255,0.4); color: var(--white); }
+.btn-outline:hover { background: rgba(255,255,255,0.12); }
+.btn-ghost { background: var(--white); border-color: var(--line); color: var(--blue); }
+.btn-ghost:hover { border-color: var(--blue); }
+.btn-block { width: 100%; }
+.btn[disabled] { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.site-header {
+  position: fixed; inset: 0 0 auto 0; z-index: 200;
+  background: rgba(250, 247, 241, 0.72);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s ease, background .3s ease;
+}
+.site-header.is-scrolled { border-color: var(--line); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 78px; }
+.logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--blue); }
+.logo .mark { width: 34px; height: 34px; }
+.logo small { display: block; font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.12em; color: var(--gold); font-weight: 500; }
+
+.nav-desktop { display: none; }
+.nav-desktop ul { display: flex; gap: 30px; }
+.nav-desktop a { font-size: 0.92rem; font-weight: 500; color: var(--ink); position: relative; padding: 6px 0; }
+.nav-desktop a::after { content:""; position:absolute; left:0; bottom:0; height:2px; width:0; background:var(--orange); transition: width .25s ease; }
+.nav-desktop a:hover::after { width: 100%; }
+.header-cta { display: none; align-items: center; gap: 14px; }
+.header-cta .btn-primary { padding: 12px 22px; box-shadow: none; }
+.header-cta .btn-primary:hover { transform: translateY(-1px); }
+.header-cta .btn-ghost { padding: 12px 20px; }
+
+.nav-toggle {
+  display: flex; flex-direction: column; gap: 5px; background: none; border: none; padding: 8px;
+}
+.nav-toggle span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .25s ease, opacity .25s ease; }
+.nav-toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-mobile {
+  position: fixed; inset: 78px 0 0 0; background: var(--paper); z-index: 190;
+  transform: translateY(-8px); opacity: 0; pointer-events: none; transition: opacity .25s ease, transform .25s ease;
+  overflow-y: auto;
+}
+.nav-mobile.is-open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.nav-mobile ul { padding: 28px var(--gutter); display: flex; flex-direction: column; gap: 4px; }
+.nav-mobile a { display: block; padding: 16px 0; font-size: 1.2rem; font-family: var(--font-display); color: var(--blue); border-bottom: 1px solid var(--line); }
+.nav-mobile .header-cta { display: flex; flex-direction: column; padding: 24px var(--gutter); }
+.nav-mobile .btn { margin-bottom: 12px; }
+
+@media (min-width: 960px) {
+  .nav-desktop { display: block; }
+  .header-cta { display: flex; }
+  .nav-toggle { display: none; }
+  .nav-mobile { display: none; }
+}
+
+/* ==========================================================================
+   HERO — blueprint grid + self-drawing house line
+   ========================================================================== */
+.hero {
+  position: relative; overflow: hidden;
+  padding-top: 150px; padding-bottom: 90px;
+  background: var(--blue);
+  color: var(--white);
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, black 40%, transparent 90%);
+}
+.hero-grid { position: relative; display: grid; gap: 48px; align-items: center; }
+.hero-copy .eyebrow { color: var(--gold-soft); }
+.hero-copy .eyebrow::before { background: var(--gold-soft); }
+.hero h1 {
+  color: var(--white); font-size: clamp(2.3rem, 5.6vw, 4rem); line-height: 1.08; margin-top: 20px;
+}
+.hero h1 em { font-style: italic; color: var(--gold-soft); }
+.hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: rgba(255,255,255,0.82); margin-top: 22px; max-width: 46ch; }
+.hero-price { font-family: var(--font-mono); color: var(--gold-soft); font-size: 0.85rem; margin-top: 6px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.hero-actions .btn-primary { min-width: 210px; }
+.hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.16); }
+.hero-stats .stat b { display: block; font-family: var(--font-mono); font-size: 1.6rem; color: var(--white); }
+.hero-stats .stat span { font-size: 0.78rem; color: rgba(255,255,255,0.68); }
+
+.hero-art { position: relative; }
+.blueprint-house { width: 100%; height: auto; }
+.blueprint-house .draw-line {
+  fill: none; stroke: var(--gold-soft); stroke-width: 1.6;
+  stroke-dasharray: 2200; stroke-dashoffset: 2200;
+  animation: draw 3.4s ease forwards 0.3s;
+}
+.blueprint-house .draw-fill { opacity: 0; animation: fadein 1.2s ease forwards 3s; }
+.blueprint-house .dim-text { fill: rgba(255,255,255,0.55); font-family: var(--font-mono); font-size: 9px; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes fadein { to { opacity: 1; } }
+
+@media (min-width: 960px) {
+  .hero-grid { grid-template-columns: 1.05fr 0.95fr; }
+}
+
+/* ==========================================================================
+   TRUST STRIP
+   ========================================================================== */
+.trust-strip { background: var(--white); border-bottom: 1px solid var(--line); }
+.trust-strip .container { display: flex; flex-wrap: wrap; gap: 28px 40px; padding-top: 30px; padding-bottom: 30px; justify-content: space-between; }
+.trust-item { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); }
+.trust-item svg { width: 20px; height: 20px; color: var(--emerald); flex-shrink: 0; }
+
+/* ==========================================================================
+   PACKAGES
+   ========================================================================== */
+.package-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.package-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: 32px 28px; display: flex; flex-direction: column; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.package-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); border-color: transparent; }
+.package-card.is-featured { background: var(--blue); color: var(--white); border-color: var(--blue); }
+.package-card.is-featured h3, .package-card.is-featured .package-price { color: var(--white); }
+.package-card.is-featured .package-list li { color: rgba(255,255,255,0.8); }
+.package-tag { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+.package-card h3 { margin-top: 10px; font-size: 1.4rem; }
+.package-price { font-family: var(--font-mono); font-size: 1.6rem; margin-top: 14px; color: var(--blue); }
+.package-price span { font-size: 0.85rem; color: var(--ink-soft); font-weight: 400; }
+.package-list { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.package-list li { font-size: 0.9rem; padding-left: 22px; position: relative; color: var(--ink-soft); }
+.package-list li::before { content: "✓"; position: absolute; left: 0; color: var(--emerald); font-weight: 700; }
+.package-card.is-featured .package-list li::before { color: var(--gold-soft); }
+.package-card .btn { margin-top: 26px; }
+.package-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+
+/* ==========================================================================
+   AI COST CALCULATOR — "dimension line" data styling
+   ========================================================================== */
+.calculator {
+  background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--line);
+  padding: clamp(24px, 4vw, 48px); box-shadow: var(--shadow-soft);
+  display: grid; gap: 40px;
+}
+@media (min-width: 900px) { .calculator { grid-template-columns: 1.1fr 0.9fr; } }
+.calc-field { margin-bottom: 20px; }
+.calc-field label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 8px; color: var(--ink); }
+.calc-field select, .calc-field input {
+  width: 100%; padding: 13px 16px; border-radius: var(--radius-sm); border: 1px solid var(--line);
+  background: var(--paper); font-size: 0.95rem; color: var(--ink); transition: border-color .2s ease;
+}
+.calc-field select:focus, .calc-field input:focus { border-color: var(--blue); }
+.calc-row { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+.calc-result {
+  background: var(--blue); color: var(--white); border-radius: var(--radius-md); padding: 32px;
+  display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden;
+}
+.calc-result::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+.calc-result > * { position: relative; }
+.calc-result .eyebrow { color: var(--gold-soft); }
+.calc-result .eyebrow::before { background: var(--gold-soft); }
+.calc-figure { font-family: var(--font-mono); font-size: clamp(2.2rem, 5vw, 3rem); margin: 14px 0 4px; letter-spacing: -0.02em; }
+.calc-note { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
+.calc-breakdown { margin-top: 22px; display: flex; flex-direction: column; gap: 8px; font-family: var(--font-mono); font-size: 0.8rem; }
+.calc-breakdown div { display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.2); padding-bottom: 6px; }
+
+/* ==========================================================================
+   LOCALITY PRICING TABLE
+   ========================================================================== */
+.locality-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--white); }
+table.locality-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+.locality-table th, .locality-table td { text-align: left; padding: 16px 20px; font-size: 0.88rem; border-bottom: 1px solid var(--line); }
+.locality-table th { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); background: var(--paper-dim); }
+.locality-table tr:last-child td { border-bottom: none; }
+.locality-table td.coord { font-family: var(--font-mono); color: var(--gold); font-size: 0.78rem; }
+.locality-table tr:hover td { background: var(--paper-dim); }
+
+/* ==========================================================================
+   PROCESS TIMELINE
+   ========================================================================== */
+.timeline { position: relative; margin-top: 24px; }
+.timeline::before { content: ""; position: absolute; top: 0; bottom: 0; left: 19px; width: 1px; background: var(--line); }
+.timeline-item { position: relative; padding-left: 60px; padding-bottom: 40px; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+  position: absolute; left: 0; top: 0; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--white); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: 0.75rem; color: var(--blue); font-weight: 700;
+}
+.timeline-item.is-active .timeline-dot { background: var(--orange); border-color: var(--orange); color: var(--white); }
+.timeline-item h4 { font-size: 1.05rem; }
+.timeline-item p { color: var(--ink-soft); font-size: 0.9rem; margin-top: 6px; max-width: 60ch; }
+
+/* Month-by-month strip */
+.month-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px; margin-top: 28px; }
+.month-chip {
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 12px; text-align: center;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.month-chip:hover { border-color: var(--gold); transform: translateY(-3px); }
+.month-chip .m { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gold); text-transform: uppercase; }
+.month-chip .stage { font-size: 0.86rem; font-weight: 600; margin-top: 6px; }
+
+/* ==========================================================================
+   WHY US GRID
+   ========================================================================== */
+.feature-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.feature-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 26px; transition: box-shadow .25s ease, transform .25s ease; }
+.feature-card:hover { box-shadow: var(--shadow-soft); transform: translateY(-4px); }
+.feature-card .icon { width: 42px; height: 42px; border-radius: 12px; background: var(--paper-dim); display: flex; align-items: center; justify-content: center; color: var(--blue); margin-bottom: 16px; }
+.feature-card h4 { font-size: 1.02rem; }
+.feature-card p { font-size: 0.88rem; color: var(--ink-soft); margin-top: 8px; }
+
+/* ==========================================================================
+   PROJECTS
+   ========================================================================== */
+.project-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+.chip {
+  padding: 9px 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--white); font-size: 0.84rem; font-weight: 600;
+  color: var(--ink-soft); transition: all .2s ease;
+}
+.chip.is-active, .chip:hover { border-color: var(--blue); color: var(--blue); background: var(--paper-dim); }
+.project-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.project-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line); transition: transform .3s ease, box-shadow .3s ease; }
+.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); }
+.project-media { aspect-ratio: 4/3; background: linear-gradient(135deg, var(--paper-dim), var(--gold-soft)); position: relative; display:flex; align-items:center; justify-content:center; color: var(--blue); }
+.project-media .coord-pin { position: absolute; top: 14px; left: 14px; background: rgba(23,27,31,0.75); color: var(--white); font-family: var(--font-mono); font-size: 0.68rem; padding: 5px 10px; border-radius: 999px; }
+.project-body { padding: 22px; }
+.project-body h4 { font-size: 1.08rem; }
+.project-meta { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 12px; font-size: 0.78rem; color: var(--ink-soft); font-family: var(--font-mono); }
+.project-quote { margin-top: 16px; font-size: 0.85rem; color: var(--ink-soft); font-style: italic; border-left: 2px solid var(--gold); padding-left: 12px; }
+
+/* ==========================================================================
+   REVIEWS / TESTIMONIAL CAROUSEL
+   ========================================================================== */
+.reviews-wrap { position: relative; }
+.review-track { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; scrollbar-width: none; }
+.review-track::-webkit-scrollbar { display: none; }
+.review-card {
+  scroll-snap-align: start; min-width: min(360px, 84vw); background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius-md); padding: 26px;
+}
+.review-stars { color: var(--gold); letter-spacing: 2px; font-size: 0.95rem; }
+.review-card p.body { margin-top: 12px; font-size: 0.92rem; color: var(--ink-soft); }
+.review-person { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.review-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--paper-dim); display:flex;align-items:center;justify-content:center; font-family: var(--font-display); font-weight:700; color: var(--blue); }
+.review-person span { font-size: 0.82rem; color: var(--ink-soft); display: block; }
+.review-nav { display: flex; gap: 10px; margin-top: 22px; }
+.review-nav button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--white); color: var(--blue); }
+.review-nav button:hover { border-color: var(--blue); }
+
+/* ==========================================================================
+   KNOW YOUR PLOT + AI ASSISTANT
+   ========================================================================== */
+.tool-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(24px,4vw,44px); }
+.checklist-output { margin-top: 24px; display: none; }
+.checklist-output.is-visible { display: block; }
+.checklist-output ul { display: flex; flex-direction: column; gap: 10px; }
+.checklist-output li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.92rem; padding: 12px 14px; background: var(--paper); border-radius: var(--radius-sm); }
+.checklist-output li .tag { font-family: var(--font-mono); font-size: 0.65rem; background: var(--emerald); color: white; padding: 3px 8px; border-radius: 6px; flex-shrink:0; margin-top: 2px; }
+
+.assistant-window { background: var(--blue); border-radius: var(--radius-lg); padding: clamp(20px,3vw,32px); color: var(--white); }
+.assistant-chat { display: flex; flex-direction: column; gap: 14px; min-height: 220px; }
+.chat-bubble { max-width: 80%; padding: 12px 16px; border-radius: 16px; font-size: 0.9rem; line-height: 1.5; }
+.chat-bubble.bot { background: rgba(255,255,255,0.1); align-self: flex-start; border-bottom-left-radius: 4px; }
+.chat-bubble.user { background: var(--orange); align-self: flex-end; border-bottom-right-radius: 4px; }
+.chat-options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.chat-options button { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); color: var(--white); padding: 9px 14px; border-radius: 999px; font-size: 0.82rem; }
+.chat-options button:hover { background: rgba(255,255,255,0.18); }
+
+/* ==========================================================================
+   COMPARISON TABLE
+   ========================================================================== */
+.compare-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--line); }
+.compare-table th, .compare-table td { padding: 16px 20px; font-size: 0.88rem; border-bottom: 1px solid var(--line); text-align: left; }
+.compare-table thead th { background: var(--blue); color: var(--white); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.compare-table thead th:first-child { text-align: left; }
+.compare-table tbody td:nth-child(2) { color: var(--emerald); font-weight: 600; }
+.compare-table tbody td:nth-child(3) { color: var(--ink-soft); }
+.compare-table tr:last-child td { border-bottom: none; }
+
+/* ==========================================================================
+   FAQ ACCORDION
+   ========================================================================== */
+.faq-list { display: flex; flex-direction: column; gap: 12px; }
+.faq-item { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; }
+.faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; background: none; border: none; text-align: left; font-size: 1rem; font-weight: 600; color: var(--blue); }
+.faq-question .plus { width: 22px; height: 22px; position: relative; flex-shrink: 0; }
+.faq-question .plus::before, .faq-question .plus::after { content: ""; position: absolute; background: var(--blue); transition: transform .25s ease; }
+.faq-question .plus::before { top: 50%; left: 0; width: 100%; height: 2px; transform: translateY(-50%); }
+.faq-question .plus::after { left: 50%; top: 0; height: 100%; width: 2px; transform: translateX(-50%); }
+.faq-item.is-open .plus::after { transform: translateX(-50%) rotate(90deg); opacity: 0; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+.faq-answer div { padding: 0 24px 22px; color: var(--ink-soft); font-size: 0.92rem; }
+
+/* ==========================================================================
+   CTA BAND
+   ========================================================================== */
+.cta-band { background: var(--emerald); color: var(--white); border-radius: var(--radius-lg); padding: clamp(40px, 6vw, 72px); text-align: center; position: relative; overflow: hidden; }
+.cta-band::before { content:""; position:absolute; inset:0; background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.12), transparent 60%); }
+.cta-band > * { position: relative; }
+.cta-band h2 { color: var(--white); font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.cta-band p { color: rgba(255,255,255,0.85); margin-top: 14px; max-width: 50ch; margin-left:auto; margin-right:auto; }
+.cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 30px; }
+.cta-band .btn-ghost { background: var(--white); }
+.cta-band .btn-outline { border-color: rgba(255,255,255,0.5); }
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer { background: var(--ink); color: rgba(255,255,255,0.7); }
+.footer-top { padding: 72px 0 48px; display: grid; gap: 40px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.footer-brand .logo { color: var(--white); }
+.footer-brand p { margin-top: 16px; font-size: 0.88rem; max-width: 34ch; color: rgba(255,255,255,0.55); }
+.footer-col h5 { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-soft); margin-bottom: 16px; }
+.footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 0.9rem; color: rgba(255,255,255,0.68); }
+.footer-col a:hover { color: var(--white); }
+.footer-map { border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(255,255,255,0.12); aspect-ratio: 16/10; background: rgba(255,255,255,0.05); display:flex;align-items:center;justify-content:center; font-family: var(--font-mono); font-size: 0.75rem; color: rgba(255,255,255,0.5); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); padding: 26px 0; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 0.8rem; color: rgba(255,255,255,0.45); }
+.footer-bottom a { color: rgba(255,255,255,0.6); }
+
+/* ==========================================================================
+   FLOATING ACTION BUTTONS
+   ========================================================================== */
+.fab-stack { position: fixed; right: 20px; bottom: 20px; z-index: 150; display: flex; flex-direction: column; gap: 12px; }
+.fab { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lift); border: none; color: var(--white); transition: transform .2s ease; }
+.fab:hover { transform: scale(1.08); }
+.fab.whatsapp { background: #25D366; }
+.fab.call { background: var(--orange); }
+
+/* ==========================================================================
+   COOKIE CONSENT
+   ========================================================================== */
+.cookie-banner {
+  position: fixed; left: 20px; right: 20px; bottom: 20px; max-width: 560px; margin: 0 auto;
+  background: var(--ink); color: rgba(255,255,255,0.85); padding: 20px 24px; border-radius: var(--radius-md);
+  display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; z-index: 300;
+  box-shadow: var(--shadow-lift); transform: translateY(140%); transition: transform .4s ease;
+}
+.cookie-banner.is-visible { transform: translateY(0); }
+.cookie-banner p { font-size: 0.85rem; margin: 0; flex: 1; min-width: 200px; }
+.cookie-actions { display: flex; gap: 10px; }
+.cookie-actions button { padding: 10px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; border: none; }
+.cookie-accept { background: var(--orange); color: var(--white); }
+.cookie-decline { background: transparent; color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.3) !important; }
+
+/* ==========================================================================
+   SCROLL REVEAL
+   ========================================================================== */
+[data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+[data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+/* ==========================================================================
+   COUNTER
+   ========================================================================== */
+.counter-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+@media (min-width: 700px) { .counter-grid { grid-template-columns: repeat(4, 1fr); } }
+.counter-card { text-align: center; }
+.counter-num { font-family: var(--font-mono); font-size: clamp(2rem, 4vw, 2.8rem); color: var(--blue); }
+.counter-label { font-size: 0.85rem; color: var(--ink-soft); margin-top: 6px; }
+
+/* Utility */
+.bg-white { background: var(--white); }
+.bg-dim { background: var(--paper-dim); }
+.text-center { text-align: center; margin-left: auto; margin-right: auto; }
+.stack-lg > * + * { margin-top: 20px; }
+.visually-hidden { position: absolute; width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap; }
+.grid-2 { display: grid; gap: 40px; }
+@media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; align-items: center; } }
+
+</style>
+
+<!-- Schema.org: LocalBusiness / GeneralContractor -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Namma Nivasa Construction Pvt Ltd",
+  "image": "https://www.nammanivasa.in/images/og-cover.jpg",
+  "url": "https://www.nammanivasa.in/",
+  "telephone": "+91-80-4567-8900",
+  "priceRange": "₹1,799 - ₹3,499 per sq.ft",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4th Floor, Prestige Tech Park Road",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "postalCode": "560103",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 12.9716, "longitude": 77.5946 },
+  "areaServed": ["Whitefield", "KR Puram", "Mahadevapura", "Marathahalli", "Sarjapur Road", "Electronic City", "HSR Layout", "Bellandur", "Yelahanka", "Hebbal", "Jayanagar", "JP Nagar", "Banashankari", "RR Nagar", "Kanakapura Road", "Devanahalli", "Hennur", "Kengeri", "Mysore Road"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1024" }
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="visually-hidden">Skip to main content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M4 20L20 6L36 20" stroke="#12315C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 18V34H32V18" stroke="#B8862E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17 34V24H23V34" stroke="#12315C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Namma Nivasa<small>BENGALURU · EST. 2013</small></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#calculator">Cost Calculator</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#localities">Localities</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="tel:+918045678900">Call Now</a>
+      <a class="btn btn-primary" href="#consultation">Book Free Consultation</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+    <ul>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#calculator">Cost Calculator</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#localities">Localities</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="header-cta">
+      <a class="btn btn-primary btn-block" href="#consultation">Book Free Consultation</a>
+      <a class="btn btn-ghost btn-block" href="tel:+918045678900">Call Now</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<div id="top"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy" data-reveal>
+      <span class="eyebrow">Bengaluru · 12.9716° N, 77.5946° E</span>
+      <h1>Build your dream home in Bengaluru, <em>with complete transparency.</em></h1>
+      <p class="hero-sub">From the first site visit to the day you get the keys — every rupee, every drawing, every delay is visible to you, live, on your phone.</p>
+      <p class="hero-price">Premium construction packages starting at ₹1,799/sq.ft*</p>
+      <div class="hero-actions">
+        <a href="#consultation" class="btn btn-primary">Book Free Consultation</a>
+        <a href="#calculator" class="btn btn-outline">Get Instant Cost Estimate</a>
+        <a href="#projects" class="btn btn-outline">Watch Projects</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b class="js-counter" data-target="1042">0</b><span>Families housed</span></div>
+        <div class="stat"><b class="js-counter" data-target="10">0</b><span>Year structural warranty</span></div>
+        <div class="stat"><b class="js-counter" data-target="19">0</b><span>Bengaluru localities served</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art" data-reveal>
+      <svg class="blueprint-house" viewBox="0 0 460 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated architectural line drawing of a modern villa">
+        <rect class="draw-fill" x="60" y="180" width="340" height="170" fill="rgba(255,255,255,0.04)"/>
+        <path class="draw-line" d="M60 180 L230 70 L400 180 M60 180 V350 H400 V180 M150 350 V240 H230 V350 M270 210 H340 V270 H270 Z M100 210 H150 V270 H100 Z"/>
+        <text class="dim-text" x="60" y="365">10.5 M</text>
+        <text class="dim-text" x="360" y="365">GROUND + 2</text>
+        <text class="dim-text" x="150" y="60">RCC FRAME STRUCTURE</text>
+        <text class="dim-text" x="20" y="270" transform="rotate(-90 20 270)">3.2 M</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Trusted by 1000+ Bengaluru families</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>ISO 9001:2015 certified</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>10-year structural warranty</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Escrow-protected payments</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>RERA compliant</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bank loan assistance</div>
+  </div>
+</section>
+
+<!-- ================= PACKAGES ================= -->
+<section class="section" id="packages">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Construction packages</span>
+      <h2>A specification for every ambition</h2>
+      <p>Every package is built on the same RCC-frame structural standard — the difference is in finish, fittings and design flexibility, never in safety.</p>
+    </div>
+
+    <div class="package-grid" data-reveal>
+      <article class="package-card">
+        <span class="package-tag">Basic</span>
+        <h3>The Essential Build</h3>
+        <div class="package-price">₹1,799<span> / sq.ft</span></div>
+        <ul class="package-list">
+          <li>M20 grade RCC structure</li>
+          <li>Standard vitrified tile flooring</li>
+          <li>Branded electrical &amp; CP fittings</li>
+          <li>Single coat exterior painting</li>
+          <li>18-month construction timeline</li>
+        </ul>
+        <a href="#consultation" class="btn btn-ghost">Choose Basic</a>
+      </article>
+
+      <article class="package-card">
+        <span class="package-tag">Premium</span>
+        <h3>The Signature Home</h3>
+        <div class="package-price">₹2,249<span> / sq.ft</span></div>
+        <ul class="package-list">
+          <li>M25 grade RCC structure</li>
+          <li>Large-format tiles + engineered wood</li>
+          <li>Modular kitchen shell included</li>
+          <li>Texture &amp; premium exterior finish</li>
+          <li>Dedicated project manager</li>
+        </ul>
+        <a href="#consultation" class="btn btn-ghost">Choose Premium</a>
+      </article>
+
+      <article class="package-card is-featured">
+        <span class="package-tag">Luxury</span>
+        <h3>The Architect's Choice</h3>
+        <div class="package-price">₹2,899<span> / sq.ft</span></div>
+        <ul class="package-list">
+          <li>Custom architectural elevation</li>
+          <li>Italian marble &amp; teakwood flooring</li>
+          <li>Full modular kitchen + wardrobes</li>
+          <li>Smart-home wiring pre-fit</li>
+          <li>Landscape &amp; facade lighting design</li>
+        </ul>
+        <a href="#consultation" class="btn btn-primary">Choose Luxury</a>
+      </article>
+
+      <article class="package-card">
+        <span class="package-tag">Ultra Luxury</span>
+        <h3>The Estate Collection</h3>
+        <div class="package-price">₹3,499<span> / sq.ft</span></div>
+        <ul class="package-list">
+          <li>Bespoke design by empanelled architects</li>
+          <li>Imported stone, home automation &amp; AV</li>
+          <li>Private lift &amp; landscaped courtyards</li>
+          <li>Concierge interior design team</li>
+          <li>White-glove handover experience</li>
+        </ul>
+        <a href="#consultation" class="btn btn-ghost">Choose Ultra Luxury</a>
+      </article>
+    </div>
+
+    <div class="package-actions" data-reveal>
+      <a href="#" class="btn btn-ghost" id="comparePackagesBtn">Compare Packages</a>
+      <a href="#" class="btn btn-outline" style="background:var(--paper-dim); color:var(--blue);" id="downloadBrochureBtn">Download Brochure</a>
+    </div>
+  </div>
+</section>
+
+<div class="coord-rule"><span>77.5946° E</span></div>
+
+<!-- ================= AI COST CALCULATOR ================= -->
+<section class="section" id="calculator">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">AI cost intelligence</span>
+      <h2>Get an instant, locality-aware estimate</h2>
+      <p>Our estimator factors in your locality's soil profile, material logistics and current labour rates — not a flat citywide number.</p>
+    </div>
+
+    <div class="calculator" data-reveal>
+      <form id="calcForm" aria-describedby="calcResultLabel">
+        <div class="calc-row">
+          <div class="calc-field">
+            <label for="calcArea">Built-up area (sq.ft)</label>
+            <input type="number" id="calcArea" min="500" step="50" value="2000" required>
+          </div>
+          <div class="calc-field">
+            <label for="calcFloors">Number of floors</label>
+            <select id="calcFloors">
+              <option value="1">Ground only</option>
+              <option value="2" selected>Ground + 1</option>
+              <option value="3">Ground + 2</option>
+              <option value="4">Ground + 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-field">
+            <label for="calcPlot">Plot size</label>
+            <select id="calcPlot">
+              <option value="30x40">30x40</option>
+              <option value="40x60">40x60</option>
+              <option value="50x80">50x80</option>
+              <option value="60x90">60x90</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label for="calcPackage">Package</label>
+            <select id="calcPackage">
+              <option value="1799">Basic — ₹1,799/sq.ft</option>
+              <option value="2249" selected>Premium — ₹2,249/sq.ft</option>
+              <option value="2899">Luxury — ₹2,899/sq.ft</option>
+              <option value="3499">Ultra Luxury — ₹3,499/sq.ft</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="calcLocality">Locality</label>
+          <select id="calcLocality">
+            <option value="whitefield">Whitefield</option>
+            <option value="electronic-city">Electronic City</option>
+            <option value="hsr">HSR Layout</option>
+            <option value="bellandur">Bellandur</option>
+            <option value="sarjapur">Sarjapur Road</option>
+            <option value="kr-puram">KR Puram</option>
+            <option value="hebbal">Hebbal</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Calculate Cost</button>
+      </form>
+
+      <div class="calc-result">
+        <span class="eyebrow" id="calcResultLabel">Estimated project cost</span>
+        <div class="calc-figure" id="calcFigure">₹0</div>
+        <p class="calc-note" id="calcNote">Enter your details to see a live estimate.</p>
+        <div class="calc-breakdown" id="calcBreakdown"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOCALITY PRICING ================= -->
+<section class="section bg-dim" id="localities">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Locality intelligence</span>
+      <h2>Construction cost by Bengaluru locality</h2>
+      <p>Soil condition, approval authority and material logistics change street by street across Bengaluru. Here's what that means for your build.</p>
+    </div>
+
+    <div class="locality-table-wrap" data-reveal>
+      <table class="locality-table">
+        <thead>
+          <tr><th>Locality</th><th>Coordinates</th><th>Approval authority</th><th>Typical soil</th><th>Est. timeline</th><th>Cost index</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Whitefield</td><td class="coord">12.9698°N</td><td>BBMP</td><td>Red laterite, stable</td><td>8–10 months</td><td>Standard</td></tr>
+          <tr><td>Sarjapur Road</td><td class="coord">12.9008°N</td><td>BBMP / Panchayat</td><td>Mixed, moderate rock</td><td>9–11 months</td><td>Standard</td></tr>
+          <tr><td>Electronic City</td><td class="coord">12.8452°N</td><td>BBMP</td><td>Hard rock strata</td><td>9–12 months</td><td>+4% (excavation)</td></tr>
+          <tr><td>Hebbal</td><td class="coord">13.0358°N</td><td>BBMP</td><td>Clayey, needs curing</td><td>8–10 months</td><td>Standard</td></tr>
+          <tr><td>JP Nagar</td><td class="coord">12.9077°N</td><td>BBMP</td><td>Stable loam</td><td>8–9 months</td><td>Standard</td></tr>
+          <tr><td>Yelahanka</td><td class="coord">13.1007°N</td><td>BBMP / BDA</td><td>Sandy loam</td><td>8–10 months</td><td>Standard</td></tr>
+          <tr><td>Devanahalli</td><td class="coord">13.2437°N</td><td>BMRDA</td><td>Rocky, needs blasting checks</td><td>10–12 months</td><td>+6% (logistics)</td></tr>
+          <tr><td>Marathahalli</td><td class="coord">12.9591°N</td><td>BBMP</td><td>Stable, prior tank-bed areas</td><td>8–10 months</td><td>Standard</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:18px;font-size:0.82rem;color:var(--ink-soft);max-width:70ch;">Cost index reflects typical variance versus our citywide average due to excavation, soil treatment or logistics — not a change in material quality. Final costs are confirmed after a physical site visit and soil test.</p>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">How we build</span>
+      <h2>The Bengaluru construction journey</h2>
+      <p>Ten stages, one dedicated project manager, and full visibility from your phone at every step.</p>
+    </div>
+
+    <div class="timeline" data-reveal>
+      <div class="timeline-item is-active"><div class="timeline-dot">1</div><h4>Free consultation</h4><p>We understand your requirements, budget and locality — no obligation, no pressure.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">2</div><h4>Site visit &amp; soil assessment</h4><p>Our engineers assess soil type, plot orientation and access for material logistics.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">3</div><h4>Architectural planning</h4><p>Vastu-aware floor plans tailored to your family's needs and the plot's dimensions.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">4</div><h4>3D elevation &amp; design sign-off</h4><p>Walk through a photorealistic 3D model before a single brick is laid.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">5</div><h4>Government approvals</h4><p>We handle BBMP/BDA/BMRDA plan sanction, khata verification and licensing paperwork.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">6</div><h4>Construction</h4><p>Foundation to slab to brickwork — daily photo logs and weekly drone flyovers.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">7</div><h4>Interiors</h4><p>Modular kitchens, wardrobes and finishing works aligned to your chosen package.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">8</div><h4>Quality audit</h4><p>A 200-point independent quality check before we call the project complete.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">9</div><h4>Handover</h4><p>Digital documentation, OC/CC assistance and a full walkthrough with our project manager.</p></div>
+      <div class="timeline-item"><div class="timeline-dot">10</div><h4>10-year warranty</h4><p>Structural warranty support long after you've moved in.</p></div>
+    </div>
+
+    <h3 style="margin-top:64px;font-size:1.4rem;" data-reveal>Month-by-month site progress</h3>
+    <div class="month-strip" data-reveal>
+      <div class="month-chip"><div class="m">M1–2</div><div class="stage">Foundation</div></div>
+      <div class="month-chip"><div class="m">M2–3</div><div class="stage">Columns</div></div>
+      <div class="month-chip"><div class="m">M3–4</div><div class="stage">Slab</div></div>
+      <div class="month-chip"><div class="m">M4–6</div><div class="stage">Brickwork</div></div>
+      <div class="month-chip"><div class="m">M6–7</div><div class="stage">Plastering</div></div>
+      <div class="month-chip"><div class="m">M7–8</div><div class="stage">Flooring</div></div>
+      <div class="month-chip"><div class="m">M8–9</div><div class="stage">Painting</div></div>
+      <div class="month-chip"><div class="m">M9–10</div><div class="stage">Interiors</div></div>
+      <div class="month-chip"><div class="m">M10</div><div class="stage">Handover</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTERACTIVE PROJECT JOURNEY DASHBOARD PREVIEW ================= -->
+<section class="section bg-dim">
+  <div class="container grid-2">
+    <div data-reveal>
+      <span class="eyebrow">Live for every client</span>
+      <h2 style="margin-top:14px;">Your project, tracked in real time</h2>
+      <p style="color:var(--ink-soft);margin-top:16px;">Every Namma Nivasa client gets a private dashboard — the same one our own project managers use — showing stage completion, daily site photos, material deliveries and payment milestones tied to actual progress, not the calendar.</p>
+      <ul class="package-list" style="margin-top:24px;">
+        <li>Live CCTV feed from your site</li>
+        <li>Daily photo logs, tagged by construction stage</li>
+        <li>WhatsApp alerts on every milestone</li>
+        <li>Escrow release tied to verified progress</li>
+      </ul>
+    </div>
+    <div class="tool-card" data-reveal>
+      <span class="eyebrow">Preview · Villa #NN-2291, Whitefield</span>
+      <div style="margin-top:20px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:8px;"><span>Overall progress</span><b>64%</b></div>
+        <div style="height:10px;background:var(--paper-dim);border-radius:99px;overflow:hidden;"><div style="width:64%;height:100%;background:var(--emerald);"></div></div>
+      </div>
+      <div class="feature-grid" style="margin-top:28px;grid-template-columns:repeat(2,1fr);gap:14px;">
+        <div class="feature-card" style="padding:16px;"><h4 style="font-size:0.9rem;">Foundation</h4><p style="margin-top:4px;color:var(--emerald);font-weight:600;">Complete</p></div>
+        <div class="feature-card" style="padding:16px;"><h4 style="font-size:0.9rem;">Slab &amp; Brickwork</h4><p style="margin-top:4px;color:var(--emerald);font-weight:600;">Complete</p></div>
+        <div class="feature-card" style="padding:16px;"><h4 style="font-size:0.9rem;">Plastering</h4><p style="margin-top:4px;color:var(--gold);font-weight:600;">In progress</p></div>
+        <div class="feature-card" style="padding:16px;"><h4 style="font-size:0.9rem;">Interiors</h4><p style="margin-top:4px;color:var(--ink-soft);font-weight:600;">Upcoming</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="section" id="why-us">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Why Bengaluru families choose us</span>
+      <h2>Technology-driven construction, not guesswork</h2>
+    </div>
+    <div class="feature-grid" data-reveal>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg></div><h4>AI project monitoring</h4><p>Predictive alerts flag material or schedule risks before they cause delays.</p></div>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg></div><h4>Drone progress updates</h4><p>Weekly aerial flyovers of your site, delivered straight to WhatsApp.</p></div>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0116 0v1"/></svg></div><h4>Dedicated project manager</h4><p>One point of contact from soil test to handover — no runaround.</p></div>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div><h4>WhatsApp updates</h4><p>Real-time messages for every milestone — no app download required.</p></div>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><h4>200-point quality audits</h4><p>Independent inspection at every major stage, documented and shared.</p></div>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div><h4>Daily site photos</h4><p>Timestamped, geo-tagged photos uploaded to your dashboard every evening.</p></div>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><h4>Escrow-protected payments</h4><p>Your money sits in escrow and releases only against verified milestones.</p></div>
+      <div class="feature-card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg></div><h4>Digital contracts &amp; docs</h4><p>Every agreement, invoice and approval stored securely and accessible anytime.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="coord-rule"><span>12.9716° N</span></div>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Recent Bengaluru projects</span>
+      <h2>Homes we've built across the city</h2>
+    </div>
+
+    <div class="project-filters" data-reveal>
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="villa">Villas</button>
+      <button class="chip" data-filter="duplex">Duplex</button>
+      <button class="chip" data-filter="triplex">Triplex</button>
+      <button class="chip" data-filter="farmhouse">Farm House</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid" data-reveal>
+      <article class="project-card" data-type="villa">
+        <div class="project-media"><span class="coord-pin">Whitefield · 12.9698°N</span></div>
+        <div class="project-body">
+          <h4>Contemporary Villa — The Aravali</h4>
+          <div class="project-meta"><span>40x60 plot</span><span>3,200 sq.ft</span><span>9 months</span></div>
+          <p class="project-quote">"They finished two weeks ahead of schedule — and told us every single time something changed."<br>— Priyanka R.</p>
+        </div>
+      </article>
+      <article class="project-card" data-type="duplex">
+        <div class="project-media"><span class="coord-pin">HSR Layout · 12.9121°N</span></div>
+        <div class="project-body">
+          <h4>Urban Duplex — The Koramangala Edge</h4>
+          <div class="project-meta"><span>30x40 plot</span><span>2,100 sq.ft</span><span>8 months</span></div>
+          <p class="project-quote">"As an NRI, I never once had to fly down. The dashboard did the work."<br>— Arvind K., Dubai</p>
+        </div>
+      </article>
+      <article class="project-card" data-type="triplex">
+        <div class="project-media"><span class="coord-pin">RR Nagar · 12.9260°N</span></div>
+        <div class="project-body">
+          <h4>Family Triplex — The Banashankari Nest</h4>
+          <div class="project-meta"><span>50x80 plot</span><span>4,600 sq.ft</span><span>11 months</span></div>
+          <p class="project-quote">"Three generations, one home, zero surprises on cost."<br>— Dr. Meenakshi S.</p>
+        </div>
+      </article>
+      <article class="project-card" data-type="farmhouse">
+        <div class="project-media"><span class="coord-pin">Devanahalli · 13.2437°N</span></div>
+        <div class="project-body">
+          <h4>Weekend Farm House — The Nandi Retreat</h4>
+          <div class="project-meta"><span>1 acre plot</span><span>2,800 sq.ft</span><span>10 months</span></div>
+          <p class="project-quote">"BMRDA approvals felt impossible until their team took over."<br>— Rohit &amp; Sneha M.</p>
+        </div>
+      </article>
+      <article class="project-card" data-type="villa">
+        <div class="project-media"><span class="coord-pin">Sarjapur Road · 12.9008°N</span></div>
+        <div class="project-body">
+          <h4>Luxury Villa — The Sarjapur Grand</h4>
+          <div class="project-meta"><span>60x90 plot</span><span>5,400 sq.ft</span><span>13 months</span></div>
+          <p class="project-quote">"It genuinely looks like the 3D render. Down to the tile grout lines."<br>— Karthik V.</p>
+        </div>
+      </article>
+      <article class="project-card" data-type="duplex">
+        <div class="project-media"><span class="coord-pin">Electronic City · 12.8452°N</span></div>
+        <div class="project-body">
+          <h4>Compact Duplex — The Bommasandra Loft</h4>
+          <div class="project-meta"><span>30x40 plot</span><span>1,950 sq.ft</span><span>8 months</span></div>
+          <p class="project-quote">"Perfect for two working professionals — every square foot planned with us."<br>— Ananya &amp; Vikram</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section bg-dim" id="reviews">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Google Reviews · 4.9 / 5 from 1,024 reviews</span>
+      <h2>What Bengaluru families say</h2>
+    </div>
+
+    <div class="reviews-wrap" data-reveal>
+      <div class="review-track" id="reviewTrack">
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="body">"From site visit to handover, the WhatsApp updates meant we never had to call and ask 'what's happening.' Refreshing for Bengaluru construction."</p>
+          <div class="review-person"><div class="review-avatar">PR</div><div><b>Priyanka R.</b><span>Whitefield</span></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="body">"We live in Dubai — the live dashboard and drone updates made building a home in Bengaluru from abroad genuinely stress-free."</p>
+          <div class="review-person"><div class="review-avatar">AK</div><div><b>Arvind K.</b><span>HSR Layout, NRI client</span></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="body">"Escrow payments gave us real peace of mind. Money only moved when the site actually progressed."</p>
+          <div class="review-person"><div class="review-avatar">MS</div><div><b>Dr. Meenakshi S.</b><span>RR Nagar</span></div></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="body">"BMRDA approvals on our Devanahalli farmhouse plot felt daunting — their documentation team handled it end to end."</p>
+          <div class="review-person"><div class="review-avatar">RM</div><div><b>Rohit M.</b><span>Devanahalli</span></div></div>
+        </article>
+      </div>
+      <div class="review-nav">
+        <button id="reviewPrev" aria-label="Previous review">←</button>
+        <button id="reviewNext" aria-label="Next review">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= "KNOW YOUR PLOT" ================= -->
+<section class="section">
+  <div class="container grid-2">
+    <div data-reveal>
+      <span class="eyebrow">Know your plot</span>
+      <h2 style="margin-top:14px;">Get a personalised approvals checklist</h2>
+      <p style="color:var(--ink-soft);margin-top:16px;">Tell us your plot type and locality, and we'll generate the specific documentation checklist you'll likely need — Khata type, BBMP/BDA/BMRDA jurisdiction, and typical inspection stages. This is a general guide, not legal advice; we confirm specifics during your site visit.</p>
+    </div>
+    <div class="tool-card" data-reveal>
+      <form id="plotForm">
+        <div class="calc-field">
+          <label for="plotKhata">Khata type</label>
+          <select id="plotKhata">
+            <option value="a-khata">A Khata</option>
+            <option value="b-khata">B Khata</option>
+            <option value="e-khata">E-Khata</option>
+            <option value="unsure">Not sure yet</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="plotAuthority">Plot jurisdiction</label>
+          <select id="plotAuthority">
+            <option value="bbmp">BBMP limits</option>
+            <option value="bda">BDA layout</option>
+            <option value="bmrda">BMRDA / outskirts</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Generate My Checklist</button>
+      </form>
+      <div class="checklist-output" id="plotOutput">
+        <ul id="plotOutputList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AI CONSULTATION ASSISTANT ================= -->
+<section class="section bg-dim" id="consultation">
+  <div class="container grid-2">
+    <div data-reveal>
+      <span class="eyebrow">Talk to our AI consultation assistant</span>
+      <h2 style="margin-top:14px;">A few questions before we book your visit</h2>
+      <p style="color:var(--ink-soft);margin-top:16px;">Answer three quick questions and we'll route you to the right specialist — villa, apartment renovation, or NRI remote-build team — before your free consultation call.</p>
+      <div class="hero-actions" style="margin-top:28px;">
+        <a href="tel:+918045678900" class="btn btn-ghost">Call Now</a>
+        <a href="https://wa.me/918045678900" class="btn btn-ghost">WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="assistant-window" data-reveal>
+      <div class="assistant-chat" id="assistantChat">
+        <div class="chat-bubble bot">Hi! I'm here to help set up your free consultation. What are you looking to build?</div>
+        <div class="chat-options" id="assistantOptions" data-step="1">
+          <button data-value="New independent house">New independent house</button>
+          <button data-value="Villa on my own plot">Villa on my own plot</button>
+          <button data-value="Renovation / floor addition">Renovation / floor addition</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPARISON ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">The difference</span>
+      <h2>Namma Nivasa vs. a traditional local contractor</h2>
+    </div>
+    <div style="overflow-x:auto;" data-reveal>
+      <table class="compare-table">
+        <thead><tr><th>What matters</th><th>Namma Nivasa</th><th>Traditional contractor</th></tr></thead>
+        <tbody>
+          <tr><td>Pricing</td><td>Fixed, itemised, published upfront</td><td>Verbal estimate, revised mid-project</td></tr>
+          <tr><td>Payments</td><td>Escrow, released against verified milestones</td><td>Cash advances, informal tracking</td></tr>
+          <tr><td>Progress visibility</td><td>Live dashboard, daily photos, drone flyovers</td><td>Occasional site visits only</td></tr>
+          <tr><td>Approvals</td><td>BBMP/BDA/BMRDA handled by in-house team</td><td>Left to the homeowner or a broker</td></tr>
+          <tr><td>Warranty</td><td>10-year structural warranty, documented</td><td>Verbal assurance, rarely enforced</td></tr>
+          <tr><td>NRI support</td><td>Dedicated remote-build coordination</td><td>Limited or none</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section bg-dim" id="faq">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Frequently asked</span>
+      <h2>Questions Bengaluru homeowners ask us</h2>
+    </div>
+    <div class="faq-list" data-reveal>
+      <div class="faq-item">
+        <button class="faq-question"><span>How much does house construction cost in Bangalore?</span><span class="plus"></span></button>
+        <div class="faq-answer"><div>Our packages range from ₹1,799 to ₹3,499 per sq.ft depending on specification level, with locality-specific adjustments for soil condition and logistics. Use our AI cost calculator above for an instant estimate, confirmed after a free site visit.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>How long does construction take?</span><span class="plus"></span></button>
+        <div class="faq-answer"><div>Most independent homes take 8–13 months from foundation to handover, depending on built-up area, number of floors and locality-specific factors like soil type and material access.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Do you help with BBMP approval?</span><span class="plus"></span></button>
+        <div class="faq-answer"><div>Yes — our documentation team assists with BBMP plan sanction, khata verification and related paperwork as part of every package. Specific requirements are confirmed during your site visit, as they vary by plot and ward.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Do you construct on BDA sites?</span><span class="plus"></span></button>
+        <div class="faq-answer"><div>Yes, we regularly build on BDA-allotted sites across Bengaluru and are familiar with BDA-specific building bye-laws and setback norms.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Can NRIs build remotely?</span><span class="plus"></span></button>
+        <div class="faq-answer"><div>Absolutely — our live project dashboard, drone updates and dedicated project manager are designed specifically so NRI clients can build a home in Bengaluru without being physically present for most of the process.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Do you provide interiors?</span><span class="plus"></span></button>
+        <div class="faq-answer"><div>Yes, our Premium package and above include modular kitchens and wardrobes, with a full concierge interior design service available on the Luxury and Ultra Luxury tiers.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question"><span>Do you provide bank loans?</span><span class="plus"></span></button>
+        <div class="faq-answer"><div>We don't lend directly, but we assist with documentation and introductions to our partner banks for construction loan applications.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <h2>Let's build your dream home.</h2>
+      <p>Book a free, no-obligation consultation with a Namma Nivasa project specialist this week.</p>
+      <div class="cta-actions">
+        <a href="#consultation" class="btn btn-ghost">Book Free Consultation</a>
+        <a href="tel:+918045678900" class="btn btn-outline">Call Now</a>
+        <a href="https://wa.me/918045678900" class="btn btn-outline">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="#top" class="logo"><span>Namma Nivasa</span></a>
+      <p>Premium, transparent home construction across Bengaluru — from Whitefield to Devanahalli. RERA compliant, ISO certified, 10-year structural warranty.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#packages">Construction packages</a></li>
+        <li><a href="#calculator">Cost calculator</a></li>
+        <li><a href="#process">Construction process</a></li>
+        <li><a href="#consultation">Free consultation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Localities</h5>
+      <ul>
+        <li><a href="/localities/whitefield.html">Whitefield</a></li>
+        <li><a href="/localities/hsr-layout.html">HSR Layout</a></li>
+        <li><a href="/localities/sarjapur-road.html">Sarjapur Road</a></li>
+        <li><a href="/localities/electronic-city.html">Electronic City</a></li>
+        <li><a href="/localities.html">View all 19 localities</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Guides &amp; blogs</h5>
+      <ul>
+        <li><a href="/blog/construction-cost-bangalore-2026.html">Construction cost in Bangalore (2026)</a></li>
+        <li><a href="/blog/bbmp-approval-guide.html">BBMP building plan approval guide</a></li>
+        <li><a href="/blog/bda-vs-bbmp-vs-bmrda.html">BDA vs BBMP vs BMRDA explained</a></li>
+        <li><a href="/blog/">View all articles</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="/privacy.html">Privacy policy</a></li>
+        <li><a href="/terms.html">Terms of service</a></li>
+        <li><a href="/contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 style="font-family:var(--font-mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold-soft);margin-bottom:16px;">Visit us</h5>
+      <div class="footer-map">Google Map — Prestige Tech Park Road, Bengaluru</div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Namma Nivasa Construction Pvt Ltd. All rights reserved.</span>
+    <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="tel:+918045678900">+91 80 4567 8900</a></span>
+  </div>
+</footer>
+
+<!-- ================= FLOATING ACTIONS ================= -->
+<div class="fab-stack">
+  <a href="https://wa.me/918045678900" class="fab whatsapp" aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 004.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.13.11-1.83-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.16-4.94-4.35-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.83 2 .9 2.14.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.44.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.38-.24.64-.14.27.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38z"/></svg>
+  </a>
+  <a href="tel:+918045678900" class="fab call" aria-label="Call us now">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+  </a>
+</div>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>We use cookies to improve your experience and understand how you find us. See our <a href="/privacy.html" style="color:#fff;text-decoration:underline;">privacy policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-decline" id="cookieDecline">Decline</button>
+    <button class="cookie-accept" id="cookieAccept">Accept</button>
+  </div>
+</div>
+
+<script>
+/* ==========================================================================
+   Namma Nivasa — app.js (vanilla JS, no dependencies)
+   ========================================================================== */
+(function () {
+  "use strict";
+
+  /* ---------- Header scroll + mobile nav ---------- */
+  var header = document.getElementById("siteHeader");
+  var navToggle = document.getElementById("navToggle");
+  var navMobile = document.getElementById("navMobile");
+
+  window.addEventListener("scroll", function () {
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
+  }, { passive: true });
+
+  navToggle.addEventListener("click", function () {
+    var isOpen = navToggle.classList.toggle("is-open");
+    navMobile.classList.toggle("is-open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  });
+
+  navMobile.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      navToggle.classList.remove("is-open");
+      navMobile.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    });
+  });
+
+  /* ---------- Scroll-triggered reveal (Intersection Observer) ---------- */
+  var revealEls = document.querySelectorAll("[data-reveal]");
+  if ("IntersectionObserver" in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+  }
+
+  /* ---------- Animated counters ---------- */
+  var counters = document.querySelectorAll(".js-counter");
+  var animateCounter = function (el) {
+    var target = parseInt(el.getAttribute("data-target"), 10) || 0;
+    var duration = 1400;
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target).toLocaleString("en-IN");
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString("en-IN");
+    }
+    requestAnimationFrame(step);
+  };
+  if ("IntersectionObserver" in window && counters.length) {
+    var counterObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function (c) { counterObserver.observe(c); });
+  }
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll(".faq-item").forEach(function (item) {
+    var question = item.querySelector(".faq-question");
+    var answer = item.querySelector(".faq-answer");
+    question.addEventListener("click", function () {
+      var isOpen = item.classList.contains("is-open");
+      document.querySelectorAll(".faq-item.is-open").forEach(function (openItem) {
+        if (openItem !== item) {
+          openItem.classList.remove("is-open");
+          openItem.querySelector(".faq-answer").style.maxHeight = null;
+        }
+      });
+      item.classList.toggle("is-open", !isOpen);
+      answer.style.maxHeight = !isOpen ? answer.scrollHeight + "px" : null;
+    });
+  });
+
+  /* ---------- Project filters ---------- */
+  var chips = document.querySelectorAll(".project-filters .chip");
+  var projectCards = document.querySelectorAll("#projectGrid .project-card");
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      chips.forEach(function (c) { c.classList.remove("is-active"); });
+      chip.classList.add("is-active");
+      var filter = chip.getAttribute("data-filter");
+      projectCards.forEach(function (card) {
+        var show = filter === "all" || card.getAttribute("data-type") === filter;
+        card.style.display = show ? "" : "none";
+      });
+    });
+  });
+
+  /* ---------- Review carousel ---------- */
+  var track = document.getElementById("reviewTrack");
+  var prevBtn = document.getElementById("reviewPrev");
+  var nextBtn = document.getElementById("reviewNext");
+  if (track && prevBtn && nextBtn) {
+    var scrollByCard = function (dir) {
+      var card = track.querySelector(".review-card");
+      var amount = card ? card.getBoundingClientRect().width + 22 : 320;
+      track.scrollBy({ left: dir * amount, behavior: "smooth" });
+    };
+    prevBtn.addEventListener("click", function () { scrollByCard(-1); });
+    nextBtn.addEventListener("click", function () { scrollByCard(1); });
+  }
+
+  /* ---------- AI Cost Calculator ---------- */
+  var calcForm = document.getElementById("calcForm");
+  var calcFigure = document.getElementById("calcFigure");
+  var calcNote = document.getElementById("calcNote");
+  var calcBreakdown = document.getElementById("calcBreakdown");
+
+  var localityFactors = {
+    "whitefield": { label: "Whitefield", factor: 1.0, note: "Stable red laterite soil keeps foundation costs standard." },
+    "electronic-city": { label: "Electronic City", factor: 1.04, note: "Hard rock strata typically adds ~4% for excavation." },
+    "hsr": { label: "HSR Layout", factor: 1.0, note: "Well-established locality with predictable logistics." },
+    "bellandur": { label: "Bellandur", factor: 1.02, note: "Lake-adjacent plots may need minor soil treatment." },
+    "sarjapur": { label: "Sarjapur Road", factor: 1.0, note: "Standard costs, though approvals may involve Panchayat limits." },
+    "kr-puram": { label: "KR Puram", factor: 1.01, note: "Generally standard, with moderate material transport time." },
+    "hebbal": { label: "Hebbal", factor: 1.0, note: "Clayey soil in pockets — curing time factored in." }
+  };
+
+  if (calcForm) {
+    calcForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var area = parseFloat(document.getElementById("calcArea").value) || 0;
+      var rate = parseFloat(document.getElementById("calcPackage").value) || 0;
+      var localityKey = document.getElementById("calcLocality").value;
+      var locality = localityFactors[localityKey] || { label: "Bengaluru", factor: 1, note: "" };
+      var floors = document.getElementById("calcFloors").value;
+
+      var baseCost = area * rate;
+      var adjustedCost = baseCost * locality.factor;
+      var structure = adjustedCost * 0.55;
+      var finishing = adjustedCost * 0.30;
+      var approvalsAndPM = adjustedCost * 0.15;
+
+      calcFigure.textContent = "₹" + Math.round(adjustedCost).toLocaleString("en-IN");
+      calcNote.textContent = area + " sq.ft in " + locality.label + " · " + locality.note;
+      calcBreakdown.innerHTML =
+        "<div><span>Structure &amp; RCC</span><span>₹" + Math.round(structure).toLocaleString("en-IN") + "</span></div>" +
+        "<div><span>Finishing &amp; fittings</span><span>₹" + Math.round(finishing).toLocaleString("en-IN") + "</span></div>" +
+        "<div><span>Approvals &amp; PM fee</span><span>₹" + Math.round(approvalsAndPM).toLocaleString("en-IN") + "</span></div>";
+    });
+    // Trigger once on load for an immediate example estimate
+    calcForm.dispatchEvent(new Event("submit"));
+  }
+
+  /* ---------- "Know Your Plot" checklist generator ---------- */
+  var plotForm = document.getElementById("plotForm");
+  var plotOutput = document.getElementById("plotOutput");
+  var plotOutputList = document.getElementById("plotOutputList");
+
+  var khataChecklist = {
+    "a-khata": [
+      { tag: "KHATA", text: "A Khata property — eligible for standard BBMP building plan sanction." },
+      { tag: "TAX", text: "Keep the latest property tax paid receipt handy for plan approval." },
+      { tag: "DOCS", text: "Sale deed, RTC (Record of Rights) and previous approved plan, if any." }
+    ],
+    "b-khata": [
+      { tag: "KHATA", text: "B Khata properties typically require regularisation before full plan sanction." },
+      { tag: "NOTE", text: "Discuss conversion timelines with your engineer before finalising the design." },
+      { tag: "DOCS", text: "Sale deed, tax receipts, and any prior BBMP correspondence." }
+    ],
+    "e-khata": [
+      { tag: "KHATA", text: "E-Khata is the digital khata format — verify it's linked correctly to BBMP records." },
+      { tag: "DOCS", text: "Downloaded E-Khata copy, sale deed, and RTC extract." }
+    ],
+    "unsure": [
+      { tag: "STEP 1", text: "We'll verify your khata type during the free site visit — no action needed from you yet." },
+      { tag: "TIP", text: "Locate your sale deed and the most recent property tax receipt in the meantime." }
+    ]
+  };
+
+  var authorityChecklist = {
+    "bbmp": [
+      { tag: "APPROVAL", text: "Plan sanction through BBMP's e-Aasthi or ward office, depending on plot size." },
+      { tag: "UTILITIES", text: "BESCOM power connection and BWSSB water/sewage NOC typically required." }
+    ],
+    "bda": [
+      { tag: "APPROVAL", text: "BDA layout plots follow BDA building bye-laws — setbacks may differ from BBMP norms." },
+      { tag: "DOCS", text: "BDA allotment letter and possession certificate needed alongside the sale deed." }
+    ],
+    "bmrda": [
+      { tag: "APPROVAL", text: "BMRDA jurisdiction (outskirts) may require DC conversion if the land was agricultural." },
+      { tag: "SITE", text: "A site inspection confirms road access and utility feasibility before sanction." }
+    ]
+  };
+
+  if (plotForm) {
+    plotForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var khata = document.getElementById("plotKhata").value;
+      var authority = document.getElementById("plotAuthority").value;
+      var items = (khataChecklist[khata] || []).concat(authorityChecklist[authority] || []);
+      plotOutputList.innerHTML = items.map(function (item) {
+        return "<li><span class=\"tag\">" + item.tag + "</span><span>" + item.text + "</span></li>";
+      }).join("") + "<li><span class=\"tag\">NEXT</span><span>Our team confirms every requirement precisely during your free site visit — this checklist is a general guide, not legal advice.</span></li>";
+      plotOutput.classList.add("is-visible");
+    });
+  }
+
+  /* ---------- AI Consultation Assistant (scripted qualifying flow) ---------- */
+  var assistantChat = document.getElementById("assistantChat");
+  var assistantFlow = {
+    1: {
+      question: "Hi! I'm here to help set up your free consultation. What are you looking to build?",
+      options: ["New independent house", "Villa on my own plot", "Renovation / floor addition"],
+      next: 2
+    },
+    2: {
+      question: "Great. Which part of Bengaluru is your plot in?",
+      options: ["Whitefield / Sarjapur belt", "HSR / Bellandur / Marathahalli", "Yelahanka / Hebbal / Devanahalli", "Somewhere else"],
+      next: 3
+    },
+    3: {
+      question: "Last one — are you currently based in Bengaluru, or building remotely (NRI)?",
+      options: ["I'm in Bengaluru", "I'm an NRI / building remotely"],
+      next: 4
+    }
+  };
+
+  function addBubble(text, who) {
+    var bubble = document.createElement("div");
+    bubble.className = "chat-bubble " + who;
+    bubble.textContent = text;
+    assistantChat.appendChild(bubble);
+  }
+
+  function renderOptions(stepNumber) {
+    var existing = assistantChat.querySelector(".chat-options");
+    if (existing) existing.remove();
+    var step = assistantFlow[stepNumber];
+    if (!step) {
+      addBubble("Thanks! Based on your answers, a project specialist will call you within 24 hours to schedule your free consultation. You can also reach us directly on WhatsApp anytime.", "bot");
+      return;
+    }
+    var wrap = document.createElement("div");
+    wrap.className = "chat-options";
+    step.options.forEach(function (opt) {
+      var btn = document.createElement("button");
+      btn.textContent = opt;
+      btn.addEventListener("click", function () {
+        addBubble(opt, "user");
+        wrap.remove();
+        setTimeout(function () {
+          if (assistantFlow[step.next]) {
+            addBubble(assistantFlow[step.next].question, "bot");
+            renderOptions(step.next);
+          } else {
+            renderOptions(null);
+          }
+        }, 400);
+      });
+      wrap.appendChild(btn);
+    });
+    assistantChat.appendChild(wrap);
+  }
+
+  /* First step is already rendered in HTML; wire up its buttons */
+  var firstOptions = document.getElementById("assistantOptions");
+  if (firstOptions) {
+    firstOptions.querySelectorAll("button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        addBubble(btn.getAttribute("data-value"), "user");
+        firstOptions.remove();
+        setTimeout(function () {
+          addBubble(assistantFlow[2].question, "bot");
+          renderOptions(2);
+        }, 400);
+      });
+    });
+  }
+
+  /* ---------- Compare packages / download brochure (demo actions) ---------- */
+  var compareBtn = document.getElementById("comparePackagesBtn");
+  if (compareBtn) {
+    compareBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var target = document.querySelector(".compare-table");
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  }
+  var brochureBtn = document.getElementById("downloadBrochureBtn");
+  if (brochureBtn) {
+    brochureBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      alert("Your brochure request has been noted — our team will email it to you shortly. (Connect a lead-capture form here in production.)");
+    });
+  }
+
+  /* ---------- Cookie consent banner ---------- */
+  var cookieBanner = document.getElementById("cookieBanner");
+  var cookieAccept = document.getElementById("cookieAccept");
+  var cookieDecline = document.getElementById("cookieDecline");
+  var COOKIE_KEY = "nn_cookie_consent";
+
+  function getConsent() {
+    try { return document.cookie.split("; ").find(function (row) { return row.indexOf(COOKIE_KEY + "=") === 0; }); }
+    catch (err) { return null; }
+  }
+  function setConsent(value) {
+    try { document.cookie = COOKIE_KEY + "=" + value + "; max-age=31536000; path=/"; }
+    catch (err) { /* noop */ }
+  }
+  if (cookieBanner && !getConsent()) {
+    setTimeout(function () { cookieBanner.classList.add("is-visible"); }, 900);
+  }
+  if (cookieAccept) {
+    cookieAccept.addEventListener("click", function () {
+      setConsent("accepted");
+      cookieBanner.classList.remove("is-visible");
+    });
+  }
+  if (cookieDecline) {
+    cookieDecline.addEventListener("click", function () {
+      setConsent("declined");
+      cookieBanner.classList.remove("is-visible");
+    });
+  }
+
+  /* ---------- Basic contact/consultation form validation (if present) ---------- */
+  document.addEventListener("submit", function (e) {
+    var form = e.target;
+    if (form.matches && form.matches("[data-validate]")) {
+      var invalid = form.querySelector(":invalid");
+      if (invalid) {
+        e.preventDefault();
+        invalid.focus();
+      }
+    }
+  });
+})();
+
+</script>
+</body>
+</html>
